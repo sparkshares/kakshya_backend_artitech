@@ -8,7 +8,7 @@ class Subject(models.Model):
     sub_title = models.CharField(max_length=200)
     sub_description = models.TextField()
     sub_code = models.CharField(max_length=200, blank=True, editable=False)
-    teacher_id = models.ForeignKey(Teacher, on_delete=models.CASCADE, related_name='subjects')
+    teacher_id = models.ForeignKey(Teacher, on_delete=models.CASCADE, related_name='teacher')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     

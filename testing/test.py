@@ -11,10 +11,7 @@ from nltk.tokenize import word_tokenize, sent_tokenize
 from nltk.corpus import stopwords, words
 from string import punctuation
 
-# Ensure NLTK components are downloaded
-nltk.download('punkt')
-nltk.download('stopwords')
-nltk.download('words')
+
 
 def preprocess_image(image_path):
     img = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)

@@ -1,6 +1,9 @@
 from django.urls import path
-from .views import home
+from assignments.views.submit_assignment_view import submit_assignment_view
+
+from assignments.views.create_assignment import create_assignment_view
 
 urlpatterns = [
-    path('', home, name='home'),
+    path('create/',create_assignment_view,name="create_assignment"),
+    path('submit-assignment',submit_assignment_view,name="submit_assignment")
 ]

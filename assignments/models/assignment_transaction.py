@@ -11,5 +11,6 @@ class AssignmentTransaction(models.Model):
     submitted_at = models.DateTimeField(auto_now_add=True)
     submitted_by = models.ForeignKey(Student, on_delete=models.CASCADE, related_name='submittedby')
     updated_at = models.DateTimeField(auto_now=True)
+    status = models.TextField()
     
     
