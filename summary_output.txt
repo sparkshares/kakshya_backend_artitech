@@ -1,0 +1,110 @@
+• Process control
+ ◦ end, abort
+ ◦ load, execute
+ ◦ create process, terminate process
+ ◦ get process attributes, set process attributes
+ ◦ wait for time
+ ◦ wait event, signal event
+ ◦ allocate and free memory
+• File management
+ ◦ create file, delete file
+ ◦ open, close
+ ◦ read, write, reposition
+ ◦ get file attributes, set file attributesSystem Calls(contd..)
+• Device management
+ ◦ request device, release device
+ ◦ read, write, reposition
+ ◦ get device attributes, set device attributes
+ ◦ logically attach or detach devices
+• Information maintenance
+ ◦ get time or date, set time or date
+ ◦ get system data, set system data
+ ◦ get process, file, or device attributes
+ ◦ set process, file, or device attributes
+• Communications
+ ◦ create, delete communication connection
+ ◦ send, receive messages
+ ◦ transfer status information
+ ◦ attach or detach remote devicesSystem Programs
+• System programs provide a convenient environment for program 
+development and execution. • Access to a shared resource allows:
+ – Computation speed -up
+ – Increased data availability
+ – Enhanced reliability
+Command -Interpreter System
+• Many commands are given to the operating system by control
+statements which deal with:
+ – process creation and management
+ – I/O handling
+ – secondary -storage management
+ – main -memory management
+ – file-system access
+ – protection
+ – networkingOperating  System  Services
+• Program  execution  – system  capability  to load a program  into memory  
+and to run it. The can be divided into:
+ – File manipulation
+ – Status information
+ – File modification
+ – Programming language support
+ – Program loading and execution
+ – Communications
+ – Application programs
+• Most users’ view of the operation system is defined by system programs, 
+not the actual system calls.System Structure – Simple Approach
+• MS -DOS – written to provide the most functionality in the least space
+ – not divided into modules
+ – Although MS -DOS has some structure, its interfaces and levels of   
+   functionality are not well separated. • The operating system is responsible for the following activities in
+connection with disk management:
+ – Free space management
+ – Storage allocation
+ – Disk scheduling
+I/O System Management
+• The I/O system consists of:
+ – A buffer -caching system
+ – A general device -driver interface
+ – Drivers for specific hardware devicesFile Management
+• A file is a collection of related information defined by its creator. The can be divided into:
+ – File manipulation
+ – Status information
+ – File modification
+ – Programming language support
+ – Program loading and execution
+ – Communications
+ – Application programs
+• Most users’ view of the operation system is defined by system programs, 
+not the actual system calls.System Programs
+• System programs provide a convenient environment for program 
+development and execution. To summarize it in a 
+nutshell, the operating system provides a variety of services that 
+programs can obtain using special instructions called system calls.Operating -System Structures
+System Components: Common System Components are
+• Process Management
+• Main Memory Management
+• Secondary -Storage Management
+• I/O System Management
+• File Management
+• Protection System
+• Networking
+• Command -Interpreter System
+Process Management
+• A process is a program in execution. The advantages  of distributed  systems  are- With 
+resource  sharing  facility  user at one site may be able to use the 
+resources  available  at another,  Speedup  the exchange  of data with one 
+another  via electronic  mail,  If one site fails in a distributed  system,  the 
+remaining  sites can potentially  continue  operating,  Better  service  to the 
+customers,  Reduction  of the load on the host computer .❖Operating System as Resource Manager:
+• Operating system is collection of software which is close to hardware. • Protection  – ensuring  that all access  to system  resources  is controlled .System  Calls
+• System  calls provide  the interface  between  a running  program  and the 
+operating  system . The operating system 
+keeps in trace that who is using which resource to grant resource required 
+amount for usage and to mediate conflicting required different programs 
+and users.❖Operating System as Extended Machine:
+• The program that hides the truth about the hardware from the 
+programmer and presents a nice, simple view of named files that can be 
+read and written is, of course, the operating system. – Allocate and deallocate memory space as needed.Secondary -Storage Management
+• Since main memory ( primary storage) is volatile and too small to
+accommodate all data and programs permanently, the computer
+system must provide secondary storage to back up main
+memory.

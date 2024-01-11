@@ -1,12 +1,12 @@
 from rest_framework import status 
 
 from django.core.exceptions import ObjectDoesNotExist
+from academics.background_task.create_class_record_task import create_class_record_task
 
 from academics.models.subject import Subject
 from academics.serializers.class_record_serializer import ClassRecordSerializer
 import os
 
-from academics.tasks import create_class_record_task
 
 def create_class_record_service(user,data):
     try:
