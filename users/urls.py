@@ -1,6 +1,4 @@
 from django.urls import path
-from users.services.profile_service import profile_edit_service
-
 from users.views.register_view import register_view
 from users.views.login_view import login_view
 from users.views.profile_view import profile_change_password_view, profile_edit_view, profile_get_view

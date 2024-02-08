@@ -13,4 +13,6 @@ class AssignmentTransaction(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     status = models.TextField()
     
+    def __str__(self):
+        return str(self.id)
     

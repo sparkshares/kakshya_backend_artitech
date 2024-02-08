@@ -8,5 +8,3 @@ class SubjectEnrolled(models.Model):
     status = models.BooleanField(default=True)
     joined_at = models.DateTimeField(auto_now_add=True)
     
-    def __str__(self):
-        return self.sub_id

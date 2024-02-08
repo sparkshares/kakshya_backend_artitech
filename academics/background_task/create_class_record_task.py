@@ -45,6 +45,7 @@ def create_class_record_task(self, record_id, file_path):
         json_response = json.loads(content)
 
         # Create a new ClassRecordSummary instance
+        
         summary_data = {
             'summary': json_response['summary'],
             'record_id': class_record.id,

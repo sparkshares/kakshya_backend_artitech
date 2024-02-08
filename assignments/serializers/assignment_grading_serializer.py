@@ -1,9 +1,10 @@
 from rest_framework import serializers
 
-from assignments.models import assignment_grading
+from assignments.models.assignment_grading import AssignmentGrading
 
-class AssingmentGradingSerializer(serializers.ModelSerializer):
+
+class AssignmentGradingSerializer(serializers.ModelSerializer):
     class Meta:
-        model = assignment_grading
+        model = AssignmentGrading
         fields = ["id","as_trans_id","grade","remark","created_at","updated_at"]
         

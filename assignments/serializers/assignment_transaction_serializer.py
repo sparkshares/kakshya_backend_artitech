@@ -6,7 +6,7 @@ from academics.models.subject_enrolled import SubjectEnrolled
 class AssignmentTransactionSerializer(serializers.ModelSerializer):
     class Meta:
         model = AssignmentTransaction
-        fields = ["as_id","as_trans_path","submitted_at","submitted_by","updated_at","status"]
+        fields = ["id","as_id","as_trans_path","submitted_at","submitted_by","updated_at","status"]
 
     def validate(self, data):
         assignment = data['as_id']
